@@ -1,0 +1,110 @@
+$primary: #ff4400;
+
+$font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-special: 'Georgia', serif;
+
+$spacer: 30px;
+
+
+
+
+body {
+    font-family: $font-base;
+}
+
+.header {
+    border: 5px solid $primary;
+    padding: $spacer;
+    margin-bottom: $spacer;
+
+    //hlavni nadpis
+    &__title {
+        color: $primary;
+        font-family: $font-special;
+        margin: 0;
+    }
+
+    &__menu {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__link {
+        background-color: $primary;
+        color: white;
+        padding: $spacer / 2;
+        display: block;
+
+        &:hover {
+            background-color: blue;
+        }
+    }
+
+}
+
+/* a {
+    color: orange;
+    &:hover,
+    &:focus {
+        background-color: orange;
+        color: white;
+    }
+
+    &:active {
+        background-color: blue;
+    }
+
+}
+ */
+
+
+
+
+
+
+button {
+    background-color: $primary;
+    color: white;
+    font-family: $font-special;
+    padding: $spacer / 2;
+}
+
+
+/* proměnné v CSS */
+
+:root {
+    --primarni: #ff88ff;
+    --rozestup: 20px;
+}
+
+h1 {
+    color: var(--primarni);
+    padding: var(--rozestup);
+    margin: calc(50px / 2);
+}
+
+footer {
+    margin-top: $spacer;
+    padding: $spacer / 2;
+    background-color: black;
+    color: white;
+
+    @media (min-width: 700px) {background-color: blue;}
+    @media (min-width: 900px) {background-color: greenyellow;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

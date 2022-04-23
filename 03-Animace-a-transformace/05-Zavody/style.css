@@ -29,3 +29,55 @@ body {
 .raketka1 { top: 150px; }
 .raketka2 { top: 330px; }
 .raketka3 { top: 510px; }
+
+/* moje css - nedokázala jsem raketky otočit */
+
+/* @keyframes pohyb {
+
+	0% {transform: translateX(0);}
+	30% {transform: translateX(300px);}
+	60% {transform: translateX(540px);}
+	80% {transform: translateX(845px)}
+	100% {transform: skew(180deg)}
+}
+
+.raketka1 {
+	animation: pohyb 10s infinite alternate;
+
+}
+
+.raketka2 {
+	animation: pohyb 5s 1s infinite alternate;
+	
+}
+
+.raketka3 {
+	animation: pohyb 8s infinite alternate;
+
+} */
+
+/* Luďkova verze */
+
+
+@keyframes pohyb {
+
+	0% { transform: translateX(0) rotate(0); }
+	40% { transform: translateX(845px) rotate(0); }
+	60% { transform: translateX(845px) rotate(180deg); }
+	100% { transform: translateX(0) rotate(180deg); }
+}
+
+.raketka1 {
+	animation: pohyb 10s both infinite;
+}
+
+.raketka2 {
+	animation: pohyb 6s 1s both infinite;
+}
+
+.raketka3 {
+	animation: pohyb 6s both infinite;
+}
+
+
+

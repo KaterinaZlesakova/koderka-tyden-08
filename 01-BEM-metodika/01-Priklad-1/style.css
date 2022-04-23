@@ -16,3 +16,72 @@ h2 {
 	#0077ff			primární barva
 	#c0c0c0			sekundární barva
 */
+
+:root {
+	--primary: #0077ff;
+	--secondary: #a7c5e6;
+}
+
+.button {
+	font-size: 16px;
+	padding: 10px 20px;
+	border: 0;
+	background-color: transparent;
+}
+
+.button--primary {
+	background-color: var(--primary);
+	color: white;
+}
+
+.button--secondary {
+	background-color: var(--secondary);
+	color: white;
+}
+
+.button--big {
+	font-size: 20px;
+	padding: 15px 30px;
+}
+
+.photo {
+	margin: 0;
+	padding: 20px;
+	display: inline-block;
+	background-color: aliceblue;
+}
+
+.photo__image {
+	display: block;
+}
+
+.photo__image--border {
+	border: 5px solid var(--primary);
+}
+
+.photo__caption {
+	margin-top: 10px;
+	font-style: italic;
+}
+
+.photo--inverted {
+	background-color: black;
+}
+
+.photo--inverted .photo__caption {
+	color: white;
+}
+
+.photo__quote {
+	margin: 0;
+	color: red;
+}
+
+.gallery {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery > * {
+	flex: 0 0 calc((100% - 60px) / 3 );
+}

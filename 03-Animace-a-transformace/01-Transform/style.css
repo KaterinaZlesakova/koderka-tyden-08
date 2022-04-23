@@ -19,7 +19,37 @@ h2 {
 .posun		{ background-color: #2ecc71;}
 .rotace 	{ background-color: #e74c3c;}
 .zvetseni	{ background-color: #3498db;}
+.zkoseni    { background-color: yellow;}
 
 /* ----------------------- */
+
+
+.posun {
+	transform: translate(100px, 50px);
+}
+
+
+.rotace {
+	transform-origin: top left;
+}
+
+.rotace:hover {
+	transform: rotate(30deg);
+	
+}
+
+.zvetseni {
+	transform-origin: top left;
+}
+
+.zvetseni:hover { /* uvádí se jenom číslo - multiplikátor */
+	transform: scale(3, 1);
+}
+
+
+.zkoseni:hover {
+	transform: skewX(15deg);
+}
+
 
 
